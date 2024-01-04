@@ -21,8 +21,14 @@ export default function SelectedContact({ selectedContactId }) {
 
   return (
     <>
-   {console.log(contact.name)}
+      {contact &&
+        <div>
+          <h1>{contact.name}</h1>
+          <p>
+            Email: {contact.email}
+            Phone: {contact.phone}
+          </p>
+        </div>}
     </>
-
   );
 }
